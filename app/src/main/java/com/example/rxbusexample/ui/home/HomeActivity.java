@@ -36,8 +36,8 @@ public class HomeActivity extends BaseActivity implements CompoundButton.OnCheck
 
   @Override protected void onInit() {
     fragments.add(new HomeFragment());
-    fragments.add(new ServiceFragment());
     fragments.add(new StoreFragment());
+    fragments.add(new ServiceFragment());
     fragments.add(new PersonalFragment());
     pagerAdapter = new MyPagerAdapter(fragmentManager, fragments);
     vpContent.setAdapter(pagerAdapter);
